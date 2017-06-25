@@ -16,6 +16,7 @@
 		AA23DDD71EFF9E5100F3649D /* alt_basecampTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA23DDD61EFF9E5100F3649D /* alt_basecampTests.swift */; };
 		AA23DDE21EFF9E5100F3649D /* alt_basecampUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA23DDE11EFF9E5100F3649D /* alt_basecampUITests.swift */; };
 		AA23DE371EFFA10D00F3649D /* BCModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA23DE361EFFA10D00F3649D /* BCModel.swift */; };
+		AAC760C91EFFDC7400CFAF2A /* styles.css in Resources */ = {isa = PBXBuildFile; fileRef = AAC760C81EFFDC7400CFAF2A /* styles.css */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		AA23DDE11EFF9E5100F3649D /* alt_basecampUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alt_basecampUITests.swift; sourceTree = "<group>"; };
 		AA23DDE31EFF9E5100F3649D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA23DE361EFFA10D00F3649D /* BCModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCModel.swift; sourceTree = "<group>"; };
+		AAC760C81EFFDC7400CFAF2A /* styles.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = styles.css; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				AA0778321EFFAAD400470F6F /* Main Controllers */,
 				AA23DDC51EFF9E5100F3649D /* Main.storyboard */,
 				AA23DDC81EFF9E5100F3649D /* Assets.xcassets */,
+				AAC760C81EFFDC7400CFAF2A /* styles.css */,
 				AA23DDCA1EFF9E5100F3649D /* LaunchScreen.storyboard */,
 				AA23DDCD1EFF9E5100F3649D /* Info.plist */,
 			);
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA23DDCC1EFF9E5100F3649D /* LaunchScreen.storyboard in Resources */,
+				AAC760C91EFFDC7400CFAF2A /* styles.css in Resources */,
 				AA23DDC91EFF9E5100F3649D /* Assets.xcassets in Resources */,
 				AA23DDC71EFF9E5100F3649D /* Main.storyboard in Resources */,
 			);

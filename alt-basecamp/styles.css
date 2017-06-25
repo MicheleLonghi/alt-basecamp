@@ -1,0 +1,31 @@
+body {
+    font-size: {bodySize}px;
+}
+
+h1 {
+    font-size: {title1Size}px;
+}
+
+h2 {
+    font-size: {title2Size}px;
+}
+
+h3 {
+    font-size: {title3Size}px;
+}
+
+.card__title {
+    font-size: {headlineSize}px;
+}
+
+.card__description {
+    font-size: {subheadlineSize}px;
+}
+
+.project-header__name-text {
+    font-size: {title1Size}px;
+}
+
+.project-header__description {
+    font-size: {title2Size}px;
+}

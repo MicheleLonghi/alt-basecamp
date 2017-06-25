@@ -80,8 +80,23 @@ extension WebViewController: UIWebViewDelegate {
     
     func webViewDidFinishLoad(_ webView: UIWebView) {
         
-        let size = UIFont.preferredFont(forTextStyle: .body).pointSize
-        let cssString = "body { font-size: \(size)px }"
+        let bodySize = UIFont.preferredFont(forTextStyle: .body).pointSize
+        let headlineSize = UIFont.preferredFont(forTextStyle: .headline).pointSize
+        let subheadlineSize = UIFont.preferredFont(forTextStyle: .subheadline).pointSize
+        let title1Size = UIFont.preferredFont(forTextStyle: .title1).pointSize
+        let title2Size = UIFont.preferredFont(forTextStyle: .title2).pointSize
+        let title3Size = UIFont.preferredFont(forTextStyle: .title3).pointSize
+        
+        let url = Bundle.main.url(forResource: "styles", withExtension: "css")!
+        let cssString = try! NSString(contentsOf: url, encoding: String.Encoding.utf8.rawValue)
+            .replacingOccurrences(of: "\n", with: "")
+            .replacingOccurrences(of: "{bodySize}", with: "\(bodySize)")
+            .replacingOccurrences(of: "{headlineSize}", with: "\(headlineSize)")
+            .replacingOccurrences(of: "{subheadlineSize}", with: "\(subheadlineSize)")
+            .replacingOccurrences(of: "{title1Size}", with: "\(title1Size)")
+            .replacingOccurrences(of: "{title2Size}", with: "\(title2Size)")
+            .replacingOccurrences(of: "{title3Size}", with: "\(title3Size)")
+        
         let javascriptString = "var style = document.createElement('style'); style.innerHTML = '%@'; document.head.appendChild(style)"
         let injectString = NSString(format: javascriptString as NSString, cssString) as String
         
