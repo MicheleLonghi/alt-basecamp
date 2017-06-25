@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AA07782F1EFFA53900470F6F /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA07782E1EFFA53900470F6F /* AuthenticationViewController.swift */; };
 		AA0778311EFFA8C300470F6F /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0778301EFFA8C300470F6F /* WebViewController.swift */; };
 		AA07783A1EFFAD3100470F6F /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0778391EFFAD3100470F6F /* TabBarController.swift */; };
 		AA23DDC01EFF9E5100F3649D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA23DDBF1EFF9E5100F3649D /* AppDelegate.swift */; };
@@ -50,7 +49,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		AA07782E1EFFA53900470F6F /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
 		AA0778301EFFA8C300470F6F /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		AA0778391EFFAD3100470F6F /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		AA23DDBC1EFF9E5100F3649D /* alt-basecamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "alt-basecamp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,7 +127,6 @@
 				AA23DE361EFFA10D00F3649D /* BCModel.swift */,
 				AA0778321EFFAAD400470F6F /* Main Controllers */,
 				AA23DDC51EFF9E5100F3649D /* Main.storyboard */,
-				AA07782E1EFFA53900470F6F /* AuthenticationViewController.swift */,
 				AA23DDC81EFF9E5100F3649D /* Assets.xcassets */,
 				AA23DDCA1EFF9E5100F3649D /* LaunchScreen.storyboard */,
 				AA23DDCD1EFF9E5100F3649D /* Info.plist */,
@@ -290,7 +287,6 @@
 				AA0778311EFFA8C300470F6F /* WebViewController.swift in Sources */,
 				AA07783A1EFFAD3100470F6F /* TabBarController.swift in Sources */,
 				AA23DDC01EFF9E5100F3649D /* AppDelegate.swift in Sources */,
-				AA07782F1EFFA53900470F6F /* AuthenticationViewController.swift in Sources */,
 				AA23DE371EFFA10D00F3649D /* BCModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
