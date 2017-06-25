@@ -10,41 +10,74 @@ import UIKit
 
 class TabBarController: UITabBarController {
     
+    var lastSelectedIndex = 0
+    
+    var tabs = [
+        [
+            "title": "Home",
+            "command": "projects",
+            "icon": "home"
+        ],
+        [
+            "title": "Campfires",
+            "command": "chats",
+            "icon": "campfires"
+        ],
+        [
+            "title": "Pings",
+            "command": "circles",
+            "icon": "pings"
+        ],
+        [
+            "title": "Hey!",
+            "command": "my/readings",
+            "icon": "hey"
+        ],
+        [
+            "title": "Bookmarks",
+            "command": "my/bookmarks",
+            "icon": "bookmarks"
+        ],
+        [
+            "title": "Drafts",
+            "command": "my/drafts",
+            "icon": "drafts"
+        ],
+        [
+            "title": "Reports",
+            "command": "reports",
+            "icon": "reports"
+        ],
+        [
+            "title": "Search",
+            "command": "search",
+            "icon": "search"
+        ]
+        
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         composeTabs()
     }
     
-    func composeTabs() {
+    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
         
-        let tabs = [
-            [
-                "title": "Home",
-                "command": "projects"
-            ],
-            [
-                "title": "Campfires",
-                "command": "chats"
-            ],
-            [
-                "title": "Pings",
-                "command": "circles"
-            ],
-            [
-                "title": "Hey!",
-                "command": "my/readings"
-            ],
-            [
-                "title": "Reports",
-                "command": "reports"
-            ],
-            [
-                "title": "Search",
-                "command": "search"
-            ]
+        if let index = tabBar.items?.index(of: item) {
             
-        ]
+            if let viewController = viewControllers?[index] as? WebViewController {
+                
+                if lastSelectedIndex == index {
+                    viewController.reloadData()
+                }
+            }
+            
+            lastSelectedIndex = index
+        }
+    }
+    
+    func composeTabs() {
         
         var controllers = [UIViewController]()
         
@@ -53,6 +86,9 @@ class TabBarController: UITabBarController {
             let webController = storyboard?.instantiateViewController(withIdentifier: "webController") as! WebViewController
             webController.command = tab["command"]
             webController.tabBarItem.title = tab["title"]
+            if let icon = tab["icon"] {
+                webController.tabBarItem.image = UIImage(named: icon)
+            }
             
             controllers.append(webController)
         }

@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "1498402142_Find01.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "chevron-left.pdf",
       "scale" : "2x"
     },
     {
@@ -19,7 +19,6 @@
     "author" : "xcode"
   },
   "properties" : {
-    "template-rendering-intent" : "template",
-    "preserves-vector-representation" : true
+    "template-rendering-intent" : "template"
   }
 }

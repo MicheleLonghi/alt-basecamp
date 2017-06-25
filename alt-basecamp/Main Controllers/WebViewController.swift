@@ -27,6 +27,11 @@ class WebViewController: UIViewController {
         
         webView.delegate = self
         
+        reloadData()
+    }
+    
+    func reloadData() {
+        
         if let baseURLPath = self.baseURLPath {
             
             if let url = URL(string: baseURLPath) {

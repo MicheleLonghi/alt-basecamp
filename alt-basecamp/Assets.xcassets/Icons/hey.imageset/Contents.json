@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "1498401834_icon-archive.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "chevron-right.pdf",
       "scale" : "2x"
     },
     {
@@ -19,7 +19,6 @@
     "author" : "xcode"
   },
   "properties" : {
-    "template-rendering-intent" : "template",
-    "preserves-vector-representation" : true
+    "template-rendering-intent" : "template"
   }
 }
