@@ -80,6 +80,13 @@ extension WebViewController: UIWebViewDelegate {
     
     func webViewDidFinishLoad(_ webView: UIWebView) {
         
+        let size = UIFont.preferredFont(forTextStyle: .body).pointSize
+        let cssString = "body { font-size: \(size)px }"
+        let javascriptString = "var style = document.createElement('style'); style.innerHTML = '%@'; document.head.appendChild(style)"
+        let injectString = NSString(format: javascriptString as NSString, cssString) as String
+        
+        webView.stringByEvaluatingJavaScript(from: injectString)
+        
         forwardItem.isEnabled = true
         backItem.isEnabled = true
     }
